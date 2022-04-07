@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronnie's fitness</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Nunito:wght@200&family=Playfair+Display&family=Syne+Tactile&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(gym.jpg);
+            color: white;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 20px;
+            left: 35px;
+        }
+
+        .left img {
+            width: 100px;
+            height: 70px
+        }
+
+        .center {
+            display: block;
+            /* border: 2px solid green; */
+            width: 33%;
+            margin: 20px auto;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            position: absolute;
+            top: 40px;
+            right: 35px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 20px 10px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .left div {
+            display: inline;
+            text-align: center;
+        }
+
+        a:hover {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        /* div {
+            display: inline;
+        } */
+
+        .btn {
+            padding: -4px 5px;
+            margin: 0px 2px;
+            font-size: 15px;
+            border-radius: 12px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            color: aqua;
+            background-color: brown;
+            cursor: pointer;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            display: block;
+            width: 38%;
+            margin: 10px auto;
+            padding: 10px 34px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 100px;
+            right: 50px;
+        }
+        .forms input{
+            display: block;
+            text-align: center;
+            width: 50%;
+            margin: 10px auto;
+            padding: 2px 2px;
+            border: 2px solid blue;
+            border-radius: 6px;
+        }
+        .forms button{
+            display: block;
+            width: 30%;
+            margin: 14px auto;
+            border-radius: 15px;
+        }
+        .forms button:hover{
+         cursor: pointer;
+         background-color: aquamarine;
+        }
+
+        .forms h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style:italic;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo1.jpg" alt="">
+            <div>Ronnie's fitness</div>
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+        </div>
+        </ul>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="noaction.php" class="forms">
+            <h3>Join the best gym in Jharkhand</h3>
+            <div>
+            <input type="text" placeholder="Enter your Name">
+            </div>
+
+            <div>
+            <input type="number" placeholder="Enter your Age">
+            </div>
+
+            <div>
+            <input type="text" placeholder="Enter your Gender">
+            </div>
+
+            <div>
+            <input type="text" placeholder="Enter your Locality">
+            </div>
+
+            <div>
+            <input type="number" placeholder="Enter your Contact Number">
+            </div>
+
+            <div>
+            <input type="email" placeholder="Enter your Email">
+           </div>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
